@@ -12,7 +12,7 @@ document.getElementById("overleafForm").addEventListener("submit", function (eve
     const data = { url: projectUrl };
 
     // Send a POST request to the backend using Fetch API
-    fetch('http://localhost:3000/download-resume', {
+    fetch(`${process.env.BACKEND_URL}/download-resume`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
