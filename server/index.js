@@ -41,6 +41,11 @@ const initPuppeteer = async () => {
 // Call the function to initialize Puppeteer when the server starts
 initPuppeteer().catch(console.error);
 
+app.get('/',async( req,res)=>{
+    res.sendStatus(200);
+})
+    
+
 app.post('/download-resume', async (req, res) => {
     const url = req.body.url;
     console.log('received url', url);
