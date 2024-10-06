@@ -12,7 +12,7 @@ document.getElementById("overleafForm").addEventListener("submit", function (eve
     const data = { url: projectUrl };
 
     // Send a POST request to the backend using Fetch API
-    fetch(`https://fresh-leaf-production.up.railway.app//download-resume`, {
+    fetch(`https://fresh-leaf-production.up.railway.app/download-resume`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
